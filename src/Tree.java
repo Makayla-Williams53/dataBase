@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 //class to create the perfect binary tree
-public class PerfectBinaryTree
+public class Tree
 {
     //constructor
     public static TreeNode perfectBinaryTree(int depth)
