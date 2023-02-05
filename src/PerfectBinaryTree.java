@@ -60,6 +60,20 @@ public class PerfectBinaryTree
         return root;
     }//end constructor
 
-
+    //print out tree (goes left, root, then right)
+    public static void printInOrder(TreeNode node)
+    {
+        //if the node is null return nothing
+        if(node == null)
+        {
+            return;
+        }//end if
+        //recursion to go the furthest left as possible
+        printInOrder(node.left);
+        //print out the value
+        System.out.print(node.value + " ");
+        //recursion to go the furthest right on the same level and do the same thing
+        printInOrder(node.right);
+    }//end printInOrder
 
 }//end PerfectBinaryTree class
